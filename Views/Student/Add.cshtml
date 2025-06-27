@@ -1,0 +1,41 @@
+﻿@model Student
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Add</title>
+</head>
+<body>
+    @using(Html.BeginForm())
+    {
+        <table>
+            <tr>
+                <td>Student Name</td>
+                <td>
+                    @Html.TextAreaFor(e => e.Sname)
+                </td>
+            </tr>
+            <tr>
+                <td>Qualification</td>
+                <td>
+                    @Html.TextAreaFor(e => e.Qualification)
+                </td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td>
+                    @Html.TextAreaFor(e => e.Percentage)
+                </td>
+            </tr>
+            <tr><td>
+                    <input type="submit" value="Submit" />
+            </td></tr>
+        </table>
+    }
+</body>
+</html>
